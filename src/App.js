@@ -18,6 +18,7 @@ const store = createStore(counterReducer)
 const renderApp = () => {
   ReactDOM.render(<App />, document.getElementById('root'))
 }
+store.subscribe(renderApp)
 
 function App() {
   return (
